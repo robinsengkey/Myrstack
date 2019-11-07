@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/// <summary>
+/// The code is kinda self explanatory
+/// </summary>
 
 class Program
 {
@@ -149,11 +152,12 @@ class Program
 
         }
 
-
+        
         Console.WriteLine("Enter Amount of legs:");
         stringLegs = Console.ReadLine();
         try
         {
+            //You can either use 'try catch' or 'TryParse'. They basically do the same thing
             legs = int.Parse(stringLegs);
 
         }
@@ -212,6 +216,8 @@ class Program
             Console.WriteLine("No ants in colony");
             return false;
         }
+
+        //Bubble sort. https://en.wikipedia.org/wiki/Bubble_sort
         List<Ant> sortedAnts = new List<Ant>(ants);
         bool notSorted = true;
         while (notSorted)
@@ -231,6 +237,7 @@ class Program
 
         }
 
+        //Print sorted ants
         for (int i = 0; i < sortedAnts.Count; i++)
         {
             Console.WriteLine(i + 1 + ": " + sortedAnts[i].GetName() + " :Legs " + sortedAnts[i].GetLegs());
@@ -239,9 +246,14 @@ class Program
 
         return true;
     }
-
+    
     private void SearchAntByName()
     {
+
+        ///<summary>
+        ///Look at the 'SearchByLegs' method for doc.
+        ///This method is almost the same as Legs one the only difference is that it looks for name instead. 
+        ///</summary>
 
         if (ants.Count == 0)
         {
@@ -268,6 +280,13 @@ class Program
 
     private void SearchByLegs()
     {
+
+        /// <summary> 
+        /// Searches ants by legs.
+        /// Does this by getting an input from user and trying Parse
+        /// If it succseed then it goes trhough and cycles the list and prints out the ants.
+        /// If it doesn't succseed then it prints out "Invalid Input".
+        /// </summary>
 
         if (ants.Count == 0)
         {
