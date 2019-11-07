@@ -1,0 +1,21 @@
+C:\Users\lukas\source\repos\Myrstacken\Myrstacken\bin\Debug\Myrstacken.exe.config
+C:\Users\lukas\source\repos\Myrstacken\Myrstacken\bin\Debug\Myrstacken.exe
+C:\Users\lukas\source\repos\Myrstacken\Myrstacken\bin\Debug\Myrstacken.pdb
+C:\Users\lukas\source\repos\Myrstacken\Myrstacken\obj\Debug\Myrstacken.csprojAssemblyReference.cache
+C:\Users\lukas\source\repos\Myrstacken\Myrstacken\obj\Debug\Myrstacken.csproj.CoreCompileInputs.cache
+C:\Users\lukas\source\repos\Myrstacken\Myrstacken\obj\Debug\Myrstacken.exe
+C:\Users\lukas\source\repos\Myrstacken\Myrstacken\obj\Debug\Myrstacken.pdb
+C:\Users\Lukas 2\source\repos\Myrstacken - kopia\Myrstacken\bin\Debug\Myrstacken.exe.config
+C:\Users\Lukas 2\source\repos\Myrstacken - kopia\Myrstacken\bin\Debug\Myrstacken.exe
+C:\Users\Lukas 2\source\repos\Myrstacken - kopia\Myrstacken\bin\Debug\Myrstacken.pdb
+C:\Users\Lukas 2\source\repos\Myrstacken - kopia\Myrstacken\obj\Debug\Myrstacken.csprojAssemblyReference.cache
+C:\Users\Lukas 2\source\repos\Myrstacken - kopia\Myrstacken\obj\Debug\Myrstacken.csproj.CoreCompileInputs.cache
+C:\Users\Lukas 2\source\repos\Myrstacken - kopia\Myrstacken\obj\Debug\Myrstacken.exe
+C:\Users\Lukas 2\source\repos\Myrstacken - kopia\Myrstacken\obj\Debug\Myrstacken.pdb
+C:\Users\Lukas 2\source\repos\Myrstacken\Myrstacken\bin\Debug\Myrstacken.exe.config
+C:\Users\Lukas 2\source\repos\Myrstacken\Myrstacken\bin\Debug\Myrstacken.exe
+C:\Users\Lukas 2\source\repos\Myrstacken\Myrstacken\bin\Debug\Myrstacken.pdb
+C:\Users\Lukas 2\source\repos\Myrstacken\Myrstacken\obj\Debug\Myrstacken.csprojAssemblyReference.cache
+C:\Users\Lukas 2\source\repos\Myrstacken\Myrstacken\obj\Debug\Myrstacken.csproj.CoreCompileInputs.cache
+C:\Users\Lukas 2\source\repos\Myrstacken\Myrstacken\obj\Debug\Myrstacken.exe
+C:\Users\Lukas 2\source\repos\Myrstacken\Myrstacken\obj\Debug\Myrstacken.pdb
