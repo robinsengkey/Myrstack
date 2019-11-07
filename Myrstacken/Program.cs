@@ -32,7 +32,7 @@ class Program
     private void Start()
     {
         ants = new List<Ant>();
-        FillingListWithTestData();
+        //FillingListWithTestData();
 
         int stopHelp = 0;
         int stopProg = 0;
