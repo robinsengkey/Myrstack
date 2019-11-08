@@ -1,4 +1,9 @@
-﻿using System;
+﻿
+/*
+ * Robin:
+ * Mer än hälften av alla using statements kan tas bort.
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +11,8 @@ using System.Threading.Tasks;
 
 /// <summary>
 /// The code is kinda self explanatory
+/// Robin:
+/// Det är upp till de som läser koden att bestämma.
 /// </summary>
 
 class Program
@@ -37,6 +44,11 @@ class Program
         ants = new List<Ant>();
         //FillingListWithTestData();
 
+        /*
+         * Robin:
+         * Vad gör dessa 2 variabler? Kunde du inte bara skkriva ut det som finns i första
+         * if-satsen innan loopen börjar? Vad används stopProg till?
+         */
         int stopHelp = 0;
         int stopProg = 0;
 
@@ -48,6 +60,10 @@ class Program
                 stopHelp += 1;
             }
 
+            /*
+             * Robin:
+             * vad betyder line i detta kontext? en rad text?
+             */
             string line = Console.ReadLine().ToLower();
             Console.WriteLine("---------------------------");
 
@@ -64,6 +80,12 @@ class Program
 
     }
 
+    /*
+     * Robin:
+     * Snyggt att du delat upp loopen i 2 metoder. Dock så är namngivningen otydlig,
+     * då metoden inte ens innehåller en loop. Start metoden innehåller din loop,
+     * och den här metoden verkar bara skicka runt en baserat på input.
+     */
     private void MainLoop(string line)
     {
 
@@ -100,13 +122,18 @@ class Program
 
     }
 
+    /*
+     * Robin:
+     * Hade det gått att förkorta de olika kommandon som finns något för att
+     * underlätta för användaren? t.ex. PrintOrdered eller något liknande?
+     */
     private void PrintHelp()
     {
         Console.WriteLine("1: Add");
         Console.WriteLine("2: Print");
         Console.WriteLine("3: Remove");
         Console.WriteLine("4: SearchByName");
-        Console.WriteLine("5: SeaechByLegs");
+        Console.WriteLine("5: SeaechByLegs"); /* Robin: Typo */
         Console.WriteLine("6: PrintAllLegsInOrder");
 
         Console.WriteLine("7: Exit");
@@ -247,6 +274,10 @@ class Program
         return true;
     }
     
+    /*
+     * Robin:
+     * Tur att det är myror man letar efter! Vad letar SearchByLegs() metoden efter?
+     */
     private void SearchAntByName()
     {
 
@@ -297,7 +328,7 @@ class Program
         Console.WriteLine("Please enter a number \n");
         string tempInput = Console.ReadLine();
         int input;
-        bool succseed = int.TryParse(tempInput, out input);
+        bool succseed = int.TryParse(tempInput, out input); /* Robin: succeed */
 
         if (succseed)
         {
@@ -323,3 +354,24 @@ class Program
 
 
 }
+
+
+/*
+ * Robin:
+ * Snyggt jobbat! Programmet är robust och jag kan inte hitta några uppenbara kraschar. Kodningstilen
+ * är överlag konsekvent och absolut läsbar, men det finns absolut en del saker vi kan förbättra på här.
+ * 
+ * Det finns en del variabler och metoder med namn som jag gärna hade slipat lite på, och en del
+ * variabler som helt kan tas bort. Det finns även en del stavfel som kan rättas.
+ * 
+ * Det finns många onödiga och inkensekventa tomma rader i koden. Ibland så är det en tom rad mellan
+ * metoder, ibland inte. Ibland är det tomrum mellan rader med slut paranteser, ibland inte. Jag
+ * skulle gärna se dig slipa lite mer på det så att koden känns lite 'renare' och mer professionell ut.
+ * 
+ * Det största som jag anser kan förbättras är att ge användaren feedback. Det är inte alltid klart 
+ * vad som ska skrivas efter att man t.ex. försökt ge en myra A i antal ben. Ska jag skriva en ny siffra
+ * eller är jag tillbaka till huvud menyn? Det finns många ställen i koden där något utförs utan
+ * att ge användaren några instruktioner om vart i programmet man befinner sig.
+ * 
+ * Annars så måste jag säga att det är bra jobbat!
+ */

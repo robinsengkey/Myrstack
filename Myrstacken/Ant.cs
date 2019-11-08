@@ -12,6 +12,10 @@
         this.name = this.name[0].ToString().ToUpper() + this.name.Substring(1, this.name.Length - 1);
 
     }
+    /*
+     * Robin:
+     * Om du inte använder kod, Ta bort den helt! Blir snyggare och lättare att läsa.
+     */
     
     /// Not using
     //public void SetLegs(int legs)
